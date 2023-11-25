@@ -29,35 +29,7 @@ import Search from './components/Search';
 function App() {
   return (
     <>
-    <BrowserRouter basename="/">
-     {/* <App /> */}
-     <Nav />
-    <Routes>
-      <Route  path='/challenge' element={<Challenge />} />
-      <Route exact path='/challenge-one' element={<ChallengeOne />} />
-      <Route exact path='/challenge-two' element={<ChallengeTwo />} />
-      <Route exact path='/challenge-three' element={<ChallengeThree />} />
-      <Route exact path='/image-gallery' element={<ImageGallery />} />
-      <Route exact path='/use-state' element={<UseStateExample />} />
-      <Route exact path='/todo-list' element={<ToDoList1 />} />
-      <Route exact path='/todo-list-toggle' element={<ToDoListToggle />} />
-      <Route exact path='/props' element={<Props name="test"/>} />
-      <Route exact path='/user-props' element={ User.map((val) => {
-            return (
-                <>
-                    < UserCard key = {val.id} name= {val.name} username ={ val.username } email = { val.email } image= { val.image } />
-                </>
-            )
-        })} />
-      <Route exact path='/form' element={<Form/>} />
-      <Route exact path='/form-two' element={<FormSimple/>} />
-      <Route exact path='/form-three' element={<FormSimpleTwo/>} />
-      <Route exact path='/name' element={<Name/>} />
-      <Route exact path='/user-context' element={<UseContext/>} />
-      <Route exact path='/user-params/:name/:id' element={<UserPrams/>} />
-      <Route exact path='/search' element={<Search/>} />
-    </Routes>
-    </BrowserRouter>,
+    <h1>hello</h1>
     </>
   );
 }

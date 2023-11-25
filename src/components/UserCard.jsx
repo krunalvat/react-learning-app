@@ -5,7 +5,7 @@ return (
 <>
 
     <div className="card-group" style= { {width: "18rem"}}>
-        <image className="card-img-top" src= { props.image} alt="Card image cap" />
+        <image className="card-img-top" src= { props.image} />
         <div className="card-body">
             <h5 className="card-title">{ props.name }</h5>
             <p className="card-text"> { props.email}</p>

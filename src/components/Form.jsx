@@ -22,21 +22,21 @@ function Form () {
     /**
      * Hard coded
      */
-    const [Name,setName] = useState("");
+    // const [Name,setName] = useState("");
     
-    const [newFullName,setNewFullName] = useState("");
+    // const [newFullName,setNewFullName] = useState("");
 
-    const [email,setEmail] = useState("");
+    // const [email,setEmail] = useState("");
 
-    const [newEmail,setNewEmail] = useState("");
+    // const [newEmail,setNewEmail] = useState("");
 
-    const setInputFormName = (event)=> {
-        setName(event.target.value);
-    }
+    // const setInputFormName = (event)=> {
+    //     setName(event.target.value);
+    // }
 
-    const setInputFormEmail = (event)=> {
-        setEmail(event.target.value);
-    }
+    // const setInputFormEmail = (event)=> {
+    //     setEmail(event.target.value);
+    // }
 
     const onSubmitForm = (event) => {
         event.preventDefault();

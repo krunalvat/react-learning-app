@@ -1,6 +1,5 @@
 import React from "react";
-import { NavLink } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {  NavLink } from 'react-router-dom';
 
 
 const Nav = () => {
@@ -20,55 +19,55 @@ const Nav = () => {
           <div className="collapse menu-list navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/">Home</NavLink>
+                <NavLink exact  className="nav-link" to="/">Home</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/challenge-one">Challenge One</NavLink>
+                <NavLink exact  className="nav-link" to="/challenge-one">Challenge One</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/challenge-two">Challenge Two</NavLink>
+                <NavLink exact  className="nav-link" to="/challenge-two">Challenge Two</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/challenge-three">Challenge Three</NavLink>
+                <NavLink exact  className="nav-link" to="/challenge-three">Challenge Three</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/image-gallery">Image Gallery</NavLink>
+                <NavLink exact  className="nav-link" to="/image-gallery">Image Gallery</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/use-state">useState</NavLink>
+                <NavLink exact  className="nav-link" to="/use-state">useState</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/todo-list">ToDo List</NavLink>
+                <NavLink exact  className="nav-link" to="/todo-list">ToDo List</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/todo-list-toggle">Show Data Based On Toggle</NavLink>
+                <NavLink exact  className="nav-link" to="/todo-list-toggle">Show Data Based On Toggle</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/props">Props</NavLink>
+                <NavLink exact  className="nav-link" to="/props">Props</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/user-props">User Props</NavLink>
+                <NavLink exact  className="nav-link" to="/user-props">User Props</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/form">Form</NavLink>
+                <NavLink exact  className="nav-link" to="/form">Form</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/form-two">Form Two</NavLink>
+                <NavLink exact  className="nav-link" to="/form-two">Form Two</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/form-three">Form Three</NavLink>
+                <NavLink exact  className="nav-link" to="/form-three">Form Three</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/name">Name</NavLink>
+                <NavLink exact className="nav-link" to="/name">Name</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/user-context">UseContext</NavLink>
+                <NavLink exact  className="nav-link" to="/user-context">UseContext</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/user-params/test/1">UseParams</NavLink>
+                <NavLink exact  className="nav-link" to="/user-params/test/1">UseParams</NavLink>
               </li>
               <li className="nav-item active">
-                <NavLink exact activeClassName="active" className="nav-link" to="/search">Search</NavLink>
+                <NavLink exact  className="nav-link" to="/search">Search</NavLink>
               </li>
             </ul>
           </div>

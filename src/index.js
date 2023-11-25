@@ -58,7 +58,7 @@ root.render(
       <Route exact path='/user-params/:name/:id' element={<UserPrams/>} />
       <Route exact path='/search' element={<Search/>} />
     </Routes>
-    </BrowserRouter>,
+    </BrowserRouter>
   </React.StrictMode>
 );
 

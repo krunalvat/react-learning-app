@@ -46,7 +46,7 @@ root.render(
       <Route exact path='/user-props' element={ User.map((val) => {
             return (
                 <>
-                    < UserCard key = {val.id} name= {val.name} username ={ val.username } email = { val.email } image= { val.image } />
+                    < UserCard key = {val.id} name= {val.name} username ={ val.username } email = { val.email } image= { val.imagePath } />
                 </>
             )
         })} />

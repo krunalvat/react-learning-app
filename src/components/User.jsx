@@ -4,28 +4,28 @@ const User = [
     name: "Leanne Graham",
     username : "Bret",
     email : "Sincere@april.biz",
-    image : "https://picsum.photos/id/1/200/300"
+    imagePath : "https://picsum.photos/id/1/200/300"
 },
 {
     id: 2,
     name: "Ervin Howell",
     username: "Antonette",
     email: "Shanna@melissa.tv",
-    image : "https://picsum.photos/id/1/200/300"
+    imimagePathage : "https://picsum.photos/id/1/200/300"
 },
 {
     id: 3,
     name: "Clementine Bauch",
     username: "Samantha",
     email: "Nathan@yesenia.net",
-    image : "https://picsum.photos/id/1/200/300"
+    imagePath : "https://picsum.photos/id/1/200/300"
 },
 {
     id: 4,
     name: "Patricia Lebsack",
     username: "Karianne",
     email: "Julianne.OConner@kory.org",
-    image : "https://picsum.photos/id/1/200/300"
+    imagePath : "https://picsum.photos/id/1/200/300"
 },
 
 ];

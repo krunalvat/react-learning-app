@@ -9,12 +9,12 @@ const ToDoListToggle = () => {
         <>
         <section>
             <h1 className="text-center text-secondary">Show Data Based On Toggle</h1>
-            {
+            {/* {
                 data.map( (elementData) => {
                     const { id } = elementData;
                     return <TodoListToggleComponent key={id} { ...elementData }/>
                 })
-            }
+            } */}
         </section>
         </>
     )

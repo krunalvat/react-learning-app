@@ -36,7 +36,7 @@ function Form () {
 
     // const setInputFormEmail = (event)=> {
     //     setEmail(event.target.value);
-    }
+    // }
 
     const onSubmitForm = (event) => {
         event.preventDefault();

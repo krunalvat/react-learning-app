@@ -8,7 +8,7 @@ const ComponentC = () => {
     
     return (
         <>
-            <h1>Hello My Name is Form Parent To {name} Last</h1>
+            <h1 className="text-center">Hello My Name is Form Parent To {name} Last</h1>
         </>
     );
 }

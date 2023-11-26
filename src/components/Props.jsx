@@ -4,7 +4,9 @@ function Props(props) {
 
 return(
     <>
-    <h1 style={{color : "darkGreen"}}> {`Name is:-    ${props.name} `}</h1>
+        <div className="text-center">
+            <h1 style={{color : "darkGreen"}}> {`Name is:-    ${props.name} `}</h1>
+        </div>
     </>
 );
 

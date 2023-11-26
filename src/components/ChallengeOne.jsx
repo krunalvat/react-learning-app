@@ -4,6 +4,7 @@ function ChallengeOne () {
 
     return (
         <>
+        <div className="text-center">
             <h1> Challenge One  Netflic Pick </h1>
             <p> Name of Netflic Pick </p>
             <ol>
@@ -13,6 +14,7 @@ function ChallengeOne () {
                 <li>Hidden Strike</li>
                 <li>What Men Want</li>
             </ol>
+        </div>
         </>
     );
 }

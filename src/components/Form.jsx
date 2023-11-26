@@ -49,18 +49,20 @@ function Form () {
 
     return(
         <>
-            <h1> Your Name Is:- {fullName.first_name} Your Email Is:- {fullName.email} </h1>
-            <form onSubmit={onSubmitForm}>
-                <div className="form-group mt-2">
-                    <label>Name:-</label>
-                    <input type="text" name="first_name" className="form-control" placeholder="Enter Name" value={fullName.first_name} onChange={getInputValue} />
-                </div>
-                <div className="form-group">
-                    <label>Email address:-</label>
-                    <input type="email" name="email" className="form-control" placeholder="Enter email" value={fullName.email} onChange={getInputValue}/>
-                </div>
-                <button type="submit" className="btn btn-primary mt-2">Submit</button>
-            </form>
+            <div className="text-center">
+                <h1> Your Name Is:- {fullName.first_name} Your Email Is:- {fullName.email} </h1>
+                <form onSubmit={onSubmitForm}>
+                    <div className="form-group mt-2">
+                        <label>Name:-</label>
+                        <input type="text" name="first_name" className="form-control" placeholder="Enter Name" value={fullName.first_name} onChange={getInputValue} />
+                    </div>
+                    <div className="form-group">
+                        <label>Email address:-</label>
+                        <input type="email" name="email" className="form-control" placeholder="Enter email" value={fullName.email} onChange={getInputValue}/>
+                    </div>
+                    <button type="submit" className="btn btn-primary mt-2">Submit</button>
+                </form>
+            </div>
         </>
     );
 }

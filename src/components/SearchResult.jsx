@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const SearchResult = (props) => {
 
     const Img = `https://source.unsplash.com/400x400/?${props.name}`;

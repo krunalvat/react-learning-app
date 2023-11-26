@@ -32,10 +32,6 @@
   color: white;
 }
 
-li {
-  text-align: center;
-  float: right;
-}
 
 li :hover {
   color: white;

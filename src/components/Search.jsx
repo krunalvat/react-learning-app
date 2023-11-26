@@ -13,7 +13,7 @@ const Search = () => {
 
     return (
         <>
-            <div>
+            <div className="text-center">
                 <input type="search" placeholder="Search anything" value={search} onChange={searchData}/>
             </div>
             <div>

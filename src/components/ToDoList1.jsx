@@ -29,24 +29,23 @@ const ToDoList1 = () =>{
 return (
     <>
         <div className="container">
-                <div className="card text-center">
+                <div className="card">
                         <div className="card-header text-center" style={{ backgroundColor : 'purple',color: "white"}}>ToDo List</div>
                         <div className="card-body">
                             <div className="input-group mb-3">
                                 <input type="text" className="form-control" value={inputList} placeholder="Add an Item" aria-label="Username" aria-describedby="basic-addon1" onChange={inputItemList} />
                                 <div className="input-group-append">
-                                    <button className="btn btn btn-primary btn-circle btn-xl" type="button" onClick={itemList}>+</button>
+                                    <button className="btn btn btn-primary btn-circle" type="button" onClick={itemList}>+</button>
                                 </div>
                             </div>
+                            <div className="card-text">
+                                    { itemListData.map((value,index) => {
+                                        return  <TodoList key={index} id={index} data={value} onSelect={deleteItemData}/>;
+                                    })
+                                    }
+                            </div>
                         </div>
-                        <div className="card-footer text-muted">
-                            <ol>
-                                { itemListData.map((value,index) => {
-                                    return  <TodoList key={index} id={index} data={value} onSelect={deleteItemData}/>;
-                                })
-                                }
-                            </ol>
-                        </div>
+                       
                 </div>
         </div>
     </>

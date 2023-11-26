@@ -6,7 +6,7 @@ const UserPrams = () => {
 
     return (
         <>
-        <h1>
+        <h1 className="text-center">
             Hello { name} {id}
         </h1>
         </>

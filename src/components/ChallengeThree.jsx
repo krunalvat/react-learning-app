@@ -19,7 +19,7 @@ function ChallengeThree() {
     }
     return(
         <> 
-            <div className="greetings">
+            <div className="greetings text-center">
                 <h1> Challenge Three Create Greeeting Wish Using React</h1>
                 <h1> Hello sir, <span style={ cssStyle } > {  greeting } </span></h1>
             </div>

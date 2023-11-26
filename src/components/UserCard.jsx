@@ -2,16 +2,15 @@ import React from "react";
 
 function UserCard(props) {
 return (
-<>
-
-    <div className="card-group" id ={ props.key }style= { {width: "18rem"}}>
-        <div className="card-body">
-            <h5 className="card-title">{ props.name }</h5>
-            <p className="card-text"> { props.email}</p>
-            <p className="card-text"> { props.username}</p>
+    <>
+        <div className="card-group text-center" id ={ props.key }style= { {width: "18rem"}}>
+            <div className="card-body">
+                <h5 className="card-title">{ props.name }</h5>
+                <p className="card-text"> { props.email}</p>
+                <p className="card-text"> { props.username}</p>
+            </div>
         </div>
-    </div>
-</>
+    </>
 )
 };
 

@@ -6,6 +6,7 @@ import './App.css';
 import Nav from './components/Nav';
 import UseContext from './components/UseContext';
 import UserPrams from './components/UserPrams';
+import Home from './components/Home';
 
 import Name from "./components/Name";
 /** Hard Coded */
@@ -30,10 +31,11 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-     <BrowserRouter basename="/">
+     <BrowserRouter basename="/" >
      {/* <App /> */}
      <Nav />
      <Routes>
+     <Route  path='/' element={<Home />} />
       <Route  path='/challenge' element={<Challenge />} />
       <Route exact path='/challenge-one' element={<ChallengeOne />} />
       <Route exact path='/challenge-two' element={<ChallengeTwo />} />

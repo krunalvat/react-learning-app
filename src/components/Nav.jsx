@@ -69,6 +69,9 @@ const Nav = () => {
               <li className="nav-item active">
                 <NavLink exact  className="nav-link" to="/search">Search</NavLink>
               </li>
+              <li className="nav-item active">
+                <NavLink exact  className="nav-link" to="/reasturant-menu">Reasturant Menu</NavLink>
+              </li>
             </ul>
           </div>
         </nav>

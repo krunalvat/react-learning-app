@@ -26,7 +26,7 @@ import ChallengeOne from './components/ChallengeOne';
 import ChallengeTwo from './components/ChallengeTwo';
 import ChallengeThree from './components/ChallengeThree';
 import Search from './components/Search';
-import Menu from './components/Menu';
+import GalleryMenu from './components/GalleryMenu';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -60,7 +60,7 @@ root.render(
       <Route exact path='/user-context' element={<UseContext/>} />
       <Route exact path='/user-params/:name/:id' element={<UserPrams/>} />
       <Route exact path='/search' element={<Search/>} />
-      <Route exact path='/reasturant-menu' element={<Menu/>} />
+      <Route exact path='/reasturant-menu' element={<GalleryMenu/>} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

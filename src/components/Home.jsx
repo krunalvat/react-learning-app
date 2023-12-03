@@ -1,5 +1,4 @@
 import React from "react";
-import img from "../images/home.svg";
 
 const Home = () => {
     return (
@@ -17,7 +16,7 @@ const Home = () => {
                                 </h2>
                             </div>
                             <div className="col-lg-6 header-img">
-                                <img src={img} className="img-fluid animated" alt="home img" />
+                                <img src="/images/home.svg" className="img-fluid animated" alt="home img" />
 
                             </div>
                         </div>

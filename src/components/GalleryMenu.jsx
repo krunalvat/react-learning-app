@@ -22,44 +22,61 @@ const GalleryMenu = () => {
         <>
             <h1 className="text-center">Order Your Special Dish</h1>
             <hr/>
-            <div className="container" >
-            <div className="menu-tab d-flex justify-content-around">
-
-                {
-                    categoryItem.map( (element) => {
-                        return (
-                            <>
-                                <button className="btn btn-warning text-capitalize" onClick={ () => filterItem(element)}>{element}</button>
-                            </>
-                        )
-                    })
-                }
-                </div>
-            </div>
-            <div className="row row-cols-3 g-3 mt-5">
+                <nav className="text-center ">
+                    <div className="btn-group">
+                    {
+                        categoryItem.map( (element) => {
+                            return (
+                                <>
+                                    <button className="btn btn-warning text-capitalize" onClick={ () => filterItem(element)}>{element}</button>
+                                </>
+                            )
+                        })
+                    }
+                    </div>
+                </nav>
+            <section className="main-card--cointainer">
+            {/* <div className="row row-cols-3 g-3 mt-5"> */}
             {items.map((element) => {
-                    const { id, name, image,price } = element;
+                    const { id, name, image,price,category } = element;
                     return (
-                        <div class="col">
-                            <div className="card mb-3" key={id}>
-                                <div className="row">
-                                    <div className="col-md-4">
-                                        <img src={image} className=" img-fluid" alt={image} />
-                                    </div>
-                                    <div className="col-md-8">
-                                        <div className="card-body">
-                                            <h5 className="card-title">{name}</h5>
-                                            <p className="card-text text-success">
-                                                Price: {price}
-                                            </p>
-                                        </div>
-                                    </div>
+                        <>
+                            <div className="card-container" key={id}>
+                                <div className="card ">
+                                <div className="card-body">
+                                    <span className="card-number card-circle subtle">{id}</span>
+                                    <span className="card-author subtle"> {category}</span>
+                                    <h2 className="card-title"> {name} </h2>
+                                    <span className="card-description subtle text-success">
+                                        Price   {price}
+                                    </span>
+                                    <div className="card-read">Read</div>
+                                </div>
+                                    <img src={image} alt="images" className="card-media" />
                                 </div>
                             </div>
-                        </div>
+                        </>
+                        // <div class="col">
+                        //     <div className="card mb-3" key={id}>
+                        //         <div className="row">
+                        //             <div className="col-md-4">
+                        //                 <img src={image} className=" img-fluid" alt={image} />
+                        //             </div>
+                        //             <div className="col-md-8">
+                        //                 <div className="card-body">
+                        //                     <h5 className="card-title">{name}</h5>
+                        //                     <p className="card-text text-success">
+                        //                         Price: {price}
+                        //                     </p>
+                        //                 </div>
+                        //             </div>
+                        //         </div>
+                        //     </div>
+                        // </div>
                     );
                 })}
-            </div>
+            {/* </div> */}
+            </section>
         </>
     );
 };

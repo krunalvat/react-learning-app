@@ -1,7 +1,5 @@
 import React,{useState} from "react";
 
-
-
 function UseStateExample() {
 
     const [name, updatedNewName] = useState("Hello");

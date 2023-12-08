@@ -1,9 +1,18 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 
 const Home = () => {
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true);
+        setTimeout(() => {
+          setLoading(false);
+        }, 1000);
+      }, []);
+
     return (
     <>
-        <section id="header" className="d-flex align-items-center">
+        { loading ? <div id="loading"></div> : <section id="header" className="d-flex align-items-center">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-10 mx-auto">
@@ -25,6 +34,7 @@ const Home = () => {
             </div>
 
         </section>
+        }
     </>
     );
 }
